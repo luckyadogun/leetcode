@@ -14,7 +14,7 @@
     return the median => (2 + 3) / 2 = 2.5
 """
 
-def array_is_even(arr):
+def is_array_even(arr):
     return len(arr) % 2 == 0
 
 
@@ -34,7 +34,7 @@ def findMedianSortedArray(nums1, nums2):
 
     middle = len(nums) // 2
     
-    if array_is_even(nums):
+    if is_array_even(nums):
         return sum((nums[middle], nums[middle - 1])) / 2
     else:
         return float(nums[middle])
